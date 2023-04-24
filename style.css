@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  background: url(./images/bg-intro-mobile.png), hsl(0, 100%, 74%);
+  font-size: 16px;
+}
+
+.banner-section {
+  padding: 6rem 2rem;
+  color: white;
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+.banner-heading {
+  margin-bottom: 2rem;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-section {
+  padding: 0 2rem;
+  padding-bottom: 4rem;
+}
+
+.form-header {
+  background-color: hsl(248, 32%, 49%);
+  border-radius: 8px;
+  box-shadow: 0 4px 4px hsla(0, 0%, 30%, 0.524);
+  color: white;
+  padding: 1rem 0;
+  margin-bottom: 1.5rem;
+}
+
+.form-header > h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  width: 200px;
+  margin: 0 auto;
+  color: hsl(246, 25%, 77%);
+}
+
+.form-header > h3 > b {
+  color: white;
+}
+
+.form-card {
+  background-color: white;
+  padding: 1.25rem;
+  border-radius: 8px;
+}
+
+.form-card > div {
+  margin-bottom: 1rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.8rem;
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  border: hsl(246, 25%, 77%) solid 1px;
+  font-weight: 500;
+  color: hsl(249, 10%, 26%);
+  border-radius: 4px;
+}
+
+.form-input::placeholder {
+  color: hsl(249, 10%, 26%);
+}
+
+.form-button {
+  background-color: hsl(154, 59%, 51%);
+  border: 2px solid hsl(154, 59%, 51%);
+  color: whitesmoke;
+  font-weight: 600;
+  letter-spacing: 1px;
+  width: 100%;
+  text-transform: uppercase;
+  padding: 1.25rem;
+  border-radius: 4px;
+  font-family: Poppins, sans-serif;
+}
+
+.form-text {
+  margin-top: 8px;
+  font-size: 0.75em;
+  text-align: center;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  color: hsl(246, 25%, 77%);
+}
+
+.tas {
+  color: hsl(0, 100%, 74%);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    background: url(./images/bg-intro-desktop.png), hsl(0, 100%, 74%);
+  }
+
+  .main-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    row-gap: 2rem;
+  }
+
+  .banner-section {
+    width: 50%;
+    text-align: left;
+    padding: 0;
+    padding-left: 10rem;
+  }
+
+  .banner-heading {
+    font-size: 2rem;
+    line-height: 2.2rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .form-section {
+    padding: 0;
+  }
+
+  .form-header > h3 {
+    width: 100%;
+  }
+}
